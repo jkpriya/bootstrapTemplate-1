@@ -128,43 +128,43 @@
           <!-- Ends Articles -->
           <!-- Start cards here - created a div to make cards responsive -->
           <!-- Go to components/cards to recreate the layout -->
-          <div class="  container-fluid row justify-content-end ">
+          <div class="row justify-content-center">
             <!-- Go to layout grid to find the respective responsive classes to use-->
             <!-- card 1 -->
-            <div class="col">
+            <div class="col-sm-8 col-md-4 my3 mt-2">
               <!-- Paste bootstrap card 1 here -->
-              <div class="card" style="width: 18rem;">
-                <img src="./images/Atlasian.png" class="card-img-top" alt="Atlasian Image">
+              <div class="card" >
+                <img src="./images/Atlasian.png" class="card-img-top " alt="Atlasian Image">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Atlasian</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">More</a>
                 </div>
               </div>
             </div>
 
             <!-- card 2 -->
-            <div class="col mt-2">
+            <div class="col-sm-8 col-md-4 my3 col mt-2">
               <!-- Paste bootstrap card 2 here -->
-              <div class="card" style="width: 18rem;">
-                <img src="./images/Airbnb.png" class="card-img-top" alt="Airbnb Image">
+              <div class="card" >
+                <img src="./images/Airbnb.png" class="card-img-top " alt="Airbnb Image">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Airbnb</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">more</a>
                 </div>
               </div>
             </div>
 
             <!-- card 3 -->
-            <div class="col mt-2">
+            <div class="col-sm-8 col-md-4 my3 col mt-2">
               <!-- Paste bootstrap card 3 here -->
-              <div class="card" style="width: 18rem";>
-                <img src="./images/GitHub.png" class="card-img-top" alt="GitHub Image">
+              <div class="card" >
+                <img src="./images/GitHub.png" class="card-img-top " alt="GitHub Image">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">GitHub</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">more</a>
                 </div>
               </div>
             </div>
@@ -173,24 +173,56 @@
       </section>
       <!-- section 3 -->
       <section id="contact">
-        <h2 class="">Let's connect!</h2>
+        <h2 class="bg-light text-secondary text-center py-3">Let's connect!</h2>
         <!-- Starts Form -->
-        <form action="#" class="">
+        <form action="#" class="container">
           <!-- Starts text & telect inputs -->
           <!-- 
              1- Choose a form control and adapt it to the layout
              2 - Choose a select layout and adapt it to the layout 
             -->
+            <div class="form-group">
+              <label for="formGroupExampleInput">FirstName</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">LastName</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter lastname">
+            </div>
+            <div class="form-group">
+              <label for="inputState">Country</label>
+              <select id="inputState" class="form-select">
+                <option>Country</option>
+                <option>Australia</option>
+                <option>Burma</option>
+                <option>UK</option>
+                <option>USA</option>
+                <option>India</option>
+              </select>
+            </div>
           <!-- Ends text & telect inputs -->
           <!-- Starts checkbox input -->
           <p>How did you hear about me?</p>
           <!-- Choose a checkbox layout and adapt it to the layout  -->
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">Facebook</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">Google</label>
+          </div>
           <!-- Ends checkbox input -->
           <!-- Starts textarea input -->
           <!-- Choose a textarea from form control -->
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
           <!-- Ends textarea input -->
           <!-- Submit button -->
           <!-- Choose a button components -->
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
           <!-- Ends submit button -->
         </form>
         <!-- Ends form -->
